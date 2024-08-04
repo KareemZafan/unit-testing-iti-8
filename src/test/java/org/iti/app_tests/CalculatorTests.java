@@ -57,7 +57,7 @@ public class CalculatorTests {
     }
 
     @Test
-    @Disabled("Not ready yet!")
+   // @Disabled("Not ready yet!")
     void testMultiplyFunctionality() {
         assertEquals(66, calculator.mul(2, 33));
         assertEquals(-100, calculator.mul(2, -50));
@@ -80,7 +80,7 @@ public class CalculatorTests {
     }
 
     @Test
-    @DisabledForJreRange(min = JRE.JAVA_8, max = JRE.JAVA_20)
+    //@DisabledForJreRange(min = JRE.JAVA_8, max = JRE.JAVA_20)
     void testSquareRootFunctionality() {
         assertEquals(13, calculator.sqrt(169));
         assertEquals(20, calculator.sqrt(400));
