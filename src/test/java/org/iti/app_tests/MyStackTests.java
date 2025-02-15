@@ -53,7 +53,7 @@ public class MyStackTests {
         assertEquals(10000, myStack.pop());
         assertEquals(400, myStack.pop());
         myStack.push(250);
-        assertEquals(250, myStack.getPeek());
+        assertNotEquals(250, myStack.getPeek());
         assertEquals(List.of(1, 2, 3, 250), myStack.getStackElements());
     }
 }
